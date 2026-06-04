@@ -168,6 +168,8 @@ html[lang="ar"] .btn svg { transform: scaleX(-1); }
 }
 .brand { display: flex; align-items: center; gap: 11px; flex-shrink: 0; }
 .brand .logo-mark { width: 34px; height: 34px; }
+.brand .brand-logo { height: 54px; width: auto; display: block; }
+@media (max-width: 560px) { .brand .brand-logo { height: 44px; } }
 .brand .logo-word { font-weight: 700; font-size: 1.32rem; letter-spacing: .02em; color: var(--white); }
 .brand .logo-word b { font-weight: 700; }
 
