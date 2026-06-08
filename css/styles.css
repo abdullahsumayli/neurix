@@ -501,6 +501,52 @@ html[lang="ar"] .step:hover { transform: translateX(-6px); }
   font-size: .88rem;
 }
 
+/* ---- Products ------------------------------------------- */
+.status-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: .74rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  background: rgba(198,160,90,.12);
+  border: 1px solid rgba(198,160,90,.34);
+  border-radius: 100px;
+  padding: 5px 13px;
+}
+html[lang="ar"] .status-tag { letter-spacing: 0; font-size: .82rem; }
+.status-tag .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--grad-gold); }
+
+.product-card { display: flex; flex-direction: column; align-items: flex-start; }
+.product-card .name { font-size: 1.5rem; margin: 18px 0 8px; }
+.product-card .name b { font-weight: 800; }
+.product-card p { color: var(--muted); font-size: .98rem; margin-bottom: 20px; }
+.product-card .icon-3d { width: 74px; height: 74px; }
+
+.card.is-soon {
+  border-style: dashed;
+  border-color: var(--border-glow);
+  background: transparent;
+  box-shadow: none;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  min-height: 200px;
+  color: var(--muted);
+}
+.card.is-soon:hover { transform: none; box-shadow: none; }
+.card.is-soon::before { display: none; }
+.card.is-soon .plus {
+  width: 48px; height: 48px;
+  display: grid; place-items: center;
+  border-radius: 14px;
+  border: 1px dashed var(--border-glow);
+  font-size: 1.6rem; font-weight: 300; color: var(--gold-deep);
+  margin-bottom: 14px;
+}
+
 /* ---- Reveal animation ------------------------------------ */
 .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
 .reveal.in { opacity: 1; transform: none; }
