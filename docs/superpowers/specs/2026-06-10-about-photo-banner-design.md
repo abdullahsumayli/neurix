@@ -35,3 +35,18 @@ page title overlaid, adapted to the NEURIX "Sovereign Clinical" identity
 Headless-browser screenshots at 1440px (AR + EN) and 375px (AR): panels render
 fully covered, title legible, language toggle and RTL/LTR mirroring correct,
 no console errors.
+
+## Update — v2 (same day)
+
+Per founder feedback the banner was rebuilt on all five pages (Home untouched):
+
+- **3 panels instead of 8** (`.pb-3` variant: strip gets `margin-inline-start`
+  for the title block; middle panel offset down for rhythm).
+- **All photos AI-generated** via Higgsfield (`nano_banana_pro`, 3:4, 1k →
+  resized to 720px JPEG q82 in `assets/ai/`). 15 unique images, zero reuse
+  across pages. Stock photos (`assets/about/`, `assets/banners/`) deleted.
+- **Saudi identity mandatory**: Saudi men in correct white thobe + red-white
+  shemagh + black agal, women in elegant abaya, Riyadh skyline, Saudi coffee
+  dallah; all graded in brand navy/gold.
+- **Vision 2030 logo** (official bilingual mark, Wikimedia) added under the
+  banner title on every page (`.pb-vision`).
